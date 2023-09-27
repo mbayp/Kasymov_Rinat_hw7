@@ -2,7 +2,7 @@ interface HavingSuperAbility {
     void applySuperAbility();
 }
 
-// Создаем абстрактный класс Hero, который реализует интерфейс HavingSuperAbility
+
 abstract class Hero implements HavingSuperAbility {
     protected int health;
     protected int damage;
@@ -15,7 +15,7 @@ abstract class Hero implements HavingSuperAbility {
     }
 }
 
-// Создаем класс Magic, наследующийся от Hero
+
 class Magic extends Hero {
     public Magic(int health, int damage) {
         super(health, damage, "Magic Super Ability");
@@ -27,7 +27,7 @@ class Magic extends Hero {
     }
 }
 
-// Создаем класс Medic, наследующийся от Hero
+
 class Medic extends Hero {
     public Medic(int health, int damage) {
         super(health, damage, "Medic Super Ability");
@@ -39,7 +39,7 @@ class Medic extends Hero {
     }
 }
 
-// Создаем класс Warrior, наследующийся от Hero
+
 class Warrior extends Hero {
     public Warrior(int health, int damage) {
         super(health, damage, "Warrior Super Ability");
